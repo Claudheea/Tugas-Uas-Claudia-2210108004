@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melly Roti & Kue</title>
+    <link rel="stylesheet" href="tokokue.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="body">
+        <div class="section blueBackground topRounded">
+            <div class="header">
+                <div class="logo"></div>
+                
+                <div class="navigation">
+                    <div class="navigationItem">
+                        Beranda
+                    </div>
+                    <div class="navigationItem">
+                        Produk
+                    </div>
+                    <div class="navigationItem">
+                        Berita
+                    </div>
+                    <div class="navigationItem">
+                        Kontak
+                    </div>
+                    <div class="navigationItem">
+                        Toko Kami
+                    </div>
+
+                </div>
+                <div class="sideButtons">
+                    <div class="profileButton">
+                    </div>
+                    <div class="cartButton">
+                
+                    </div>
+
+                </div>
+               
+            </div>
+            <div class="welcomeSection">
+                <div class="welcome">
+                    <div class="welcomeTitle">
+                        Selamat Datang ! di Melly Roti & Kue
+                    </div>
+                    <div class="welcomeDetails">
+                        Roti Melly adalah toko roti yang berdiri sejak 1989 di Surabaya yang  menyediakan berbagai macam roti dan kue yang berkualitas dengan harga bersaing.
+                    </div>
+                    <div class="welcomeMoreButton">
+                        More
+                    </div>
+                </div>
+                <div class="welcomeImageContainer">
+                    <div class="welcomeImage"></div>
+        
+                </div>
+                <div class="productSummary">
+                    <div class="productSummaryTitle">
+                        Jajanan Pasar
+                    </div>
+                    <div class="productSummaryDetail">
+                        Toko Melly Roti dan Kue merupakan tempat yang sempurna bagi Anda yang mencari jajanan pasar yang beragam dan lezat.
+                    </div>
+                    <div class="productSummaryImageList">
+                        <script>
+                        var productImagesUrl = ["kue_1.png", "kue_2.png", "kue_3.png", "kue_4.png"]    
+                        
+                        for (i = 0;i <productImagesUrl.length;i++) {
+                            productImageContainer = document.createElement('div');
+                            productImageContainer.className = 'productSummaryImageContainer';
+
+                            document.getElementsByClassName('productSummaryImageList')[0].appendChild(productImageContainer)
+
+
+                            productImage = document.createElement('div');
+                            productImage.className = 'productSummaryImage';
+                            productImage.style.backgroundImage = `url(Picture/${productImagesUrl[i]})`;
+                            document.getElementsByClassName('productSummaryImageContainer')[i].appendChild(productImage);
+                        }  
+                    </script>
+
+                        
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="decoration">
+            <div class="halfCircle bottomHalfCircle firstCircle"></div>
+            <div class="halfCircle bottomHalfCircle secondCircle"></div>
+            <div class="wideHalfCircle bottomHalfCircle thirdCircle">
+                <a href="#productSection" class="actionLink">
+                    <div class="actionButton">
+                        <div class="actionButtonName">
+                            Scroll
+                        </div>
+                        <div class="arrowDown"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="halfCircle bottomHalfCircle fourthCircle"></div>
+            <div class="halfCircle bottomHalfCircle fifthCircle"></div>
+        </div>
+        <div id="productSection" class="section">
+            <div class="title">
+                Produk Kami
+            </div>
+            <div class="productGrid">
+                <script>
+                    var productImagesUrl = ["Produk_1.png", "Produk_2.png", "Produk_3.png", "Produk_4.png", "Produk_5.png", "Produk_6.png", "Produk_7.png", "Produk_8.png", "Produk_9.png", "Produk_10.png", "Produk_11.png", "Produk_12.png"]
+                    var  productNames = ["Jajanan Pasar", "Roll Tart", "Brownies", "Paketan", "Cake", "Roti Manis", "Roti Mini", "Roti Tawar", "Roti Kepang", "Donut", "Puding", "Kue Kering"]
+
+
+                    for (i = 0; i < productImagesUrl.length; i++) {
+                        productImageContainer = document.createElement('div');
+                        productImageContainer.className = 'product';
+
+                        document.getElementsByClassName('productGrid')[0].appendChild(productImageContainer);
+
+
+                        productImage = document.createElement('div');
+                        productImage.className = 'productImage';
+                        productImage.style.backgroundImage = `url(Picture/${productImagesUrl[i]})`;
+
+                        productName = document.createElement('div');
+                        productName.className = 'productName';
+                        productName.innerHTML = productNames[i]
+
+                        document.getElementsByClassName('product')[i].appendChild(productImage);
+                        document.getElementsByClassName('product')[i].appendChild(productName);
+
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="section">
+            <div class="title">
+                Keunggulan Kami
+            </div>
+            <div class="advantagesContainer">
+                <div class="advantagesGrid">
+                    <script>
+                        var iconsUrl = ["variant_icon.png", "heart_icon.png", "dollar_icon.png", "medal_icon.png", "recipe_icon.png", "cake_icon.png"]
+                        var advantagesName = ["Banyak Varian", "Bahan Terbaik & Tanpa Pengawet", "Harga Bersaing", "Meraih Penghargaan", "Resep Kuno", "Pesanan Khusus"]
+                        var advantagesDetails = [
+                            "Toko kami mempunyai lebih dari 500 varian produk yang  bermacam-macam, mulai dari roti mini dan jajan pasar hingga spiku dan brownies.",
+                            "Semua produk kami menggunakan bahan terbaik, berkualitas dan bebas dari berbagai macam pengawet makanan.",
+                            "Semua produk kami memiliki harga yang bersaing di pasaran.",
+                            "Toko kami memenangkan beberapa penghargaan bergengsi di Indonesia seperti rekor MURI dan Jawa Pos Culinary Awards.",
+                            "Semua roti dan kue buatan kami menggunakan resep yang khas sejak tahun 1989.",
+                            "Kami juga melayani pesanan khusus untuk acara keluarga, ulang tahun, kantor, pernikahan, arisan, training, dan lain-lain."
+                        ]
+                        
+                        for (i = 0; i < iconsUrl.length; i++) {
+                            advantageContainer = document.createElement('div');
+                            advantageContainer.className = 'advantage';
+          
+                            document.getElementsByClassName('advantagesGrid')[0].appendChild(advantageContainer);
+    
+                                              
+                            advantageIcon = document.createElement('div');
+                            advantageIcon.className = 'advantageIcon';
+                            advantageIcon.style.backgroundImage = `url(Picture/${iconsUrl[i]})`;
+    
+                            advantageName = document.createElement('div');
+                            advantageName.className = 'advantageTitle';
+                            advantageName.innerHTML = advantagesName[i];
+
+                            advantageDetail = document.createElement('div');
+                            advantageDetail.className = 'advantageDetail';
+                            advantageDetail.innerHTML = advantagesDetails[i];
+
+                        
+                            document.getElementsByClassName('advantage')[i].appendChild(advantageIcon);
+                            document.getElementsByClassName('advantage')[i].appendChild(advantageName);
+                            document.getElementsByClassName('advantage')[i].appendChild(advantageDetail);
+
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="bottomDecoration">
+            <div class="halfCircle topHalfCircle firstCircle"></div>
+            <div class="halfCircle topHalfCircle secondCircle"></div>
+            <div class="wideHalfCircle topHalfCircle thirdCircle">
+                <a href="#welcomeSection" class="actionLink">
+                    <div class="bottomActionButton">
+                        <div class="arrowUp"></div>
+                        <div class="actionButtonName">
+                            Back to Top
+                        </div>
+                        <script>
+                            const arrowUpButton = document.querySelector('.arrowUp');
+                          
+                            arrowUpButton.addEventListener('click', function() {
+                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                            });
+                        </script>
+                    </div>
+                </a>
+            </div>
+            <div class="halfCircle topHalfCircle fourthCircle"></div>
+            <div class="halfCircle topHalfCircle fifthCircle"></div>
+        </div>
+        <div class="section blueBackground bottomRounded">
+            <div class="contactSection">
+                <div class="contactImage">
+
+                </div>
+                <div class="contact">
+                    <div class="contactTitle">
+                        Alamat & Kontak
+                    </div>
+                    <div class="contactDetail">
+                        Jl. Adityawarman No. 78<br>
+                        Darmo, Wonokromo<br>
+                        Surabaya 60242<br><br>
+                        Telepon 1 : (031) 566 3389<br>
+                        Telepon 2 : (031) 567 3613<br>
+                        WhatsApp : +62 8121 6399 3377<br><br>
+                        Jl. Raya Tropodo No.57<br>
+                        Waru, Sidoarjo<br>
+                        Telepon : (031) 990 41445
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
